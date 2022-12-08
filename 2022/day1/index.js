@@ -17,8 +17,7 @@ async function main() {
             tempCalories = 0
             return highestCalories
         }
-    }).filter(calorie => calorie !== undefined)
-    calorieList.sort((a, b) => {
+    }).filter(calorie => calorie !== undefined).sort((a, b) => {
         return a - b
     }).reverse()
     console.log(calorieList[0] + calorieList[1] + calorieList[2])
